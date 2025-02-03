@@ -3,11 +3,9 @@
 
 /* Razieh codes */
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     --beige-background: #f0e7cd;
-    --dark-green: #29342e;
+    --dark-green-background: #28332d;
 }
 
 ul{
@@ -16,6 +14,23 @@ ul{
 
 body{
     background: var(--beige-background)
+}
+
+.menu h2{
+    color: #a59f6d;
+}
+
+.menu-titles{
+    background: var(--dark-green-background);
+    color: #a59f6d;
+}
+
+.menu-images{
+    background: url(../images/section2-background.png);
+}
+
+.dark-green-divider{
+    background: var(--dark-green-background);
 }
 
 /* Abdulwahed codes */
