@@ -28,8 +28,9 @@ body{
     color: #a59f6d;
 }
 
-.menu-images{
-    background: url(../images/header-bg.jpg);
+.green-photo-background{
+    background: url(../images/header-bg.jpg) center;
+    background-size: cover;
 }
 
 .dark-green-divider{
