@@ -24,16 +24,16 @@ body{
 }
 
 .menu-titles{
-    background: var(--dark-green-background);
+    background: var(--dark-green);
     color: #a59f6d;
 }
 
 .menu-images{
-    background: url(../images/section2-background.png);
+    background: url(../images/header-bg.jpg);
 }
 
 .dark-green-divider{
-    background: var(--dark-green-background);
+    background: var(--dark-green);
 }
 
 /* Abdulwahed codes */
