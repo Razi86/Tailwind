@@ -3,9 +3,12 @@
 
 /* Razieh codes */
 *{
+    /* padding: 0;
+    margin: 0; */
     box-sizing: border-box;
     --beige-background: #f0e7cd;
-    --dark-green-background: #28332d;
+    --dark-green: #28332d;
+    font-family: "Fire Sans", sans-serif;
 }
 
 ul{
