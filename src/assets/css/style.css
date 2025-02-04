@@ -3,11 +3,11 @@
 
 /* Razieh codes */
 *{
-    /* padding: 0; */
-    /* margin: 0; */
+    /* padding: 0;
+    margin: 0; */
     box-sizing: border-box;
     --beige-background: #f0e7cd;
-    --dark-green: #29342e;
+    --dark-green: #28332d;
     font-family: "Fire Sans", sans-serif;
 }
 
@@ -17,6 +17,24 @@ ul{
 
 body{
     background: var(--beige-background)
+}
+
+.menu h2{
+    color: #a59f6d;
+}
+
+.menu-titles{
+    background: var(--dark-green);
+    color: #a59f6d;
+}
+
+.green-photo-background{
+    background: url(../images/header-bg.jpg) center;
+    background-size: cover;
+}
+
+.dark-green-divider{
+    background: var(--dark-green);
 }
 
 /* Abdulwahed codes */
