@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body">
 
-    <!-- Header Section -->
+    <!-- Header Start -->
     <header class="relative h-screen">
 
         <!-- Header Content -->
@@ -72,10 +72,46 @@
         <!-- Bottom -->
         <div class="absolute bottom-0 left-0 w-full h-24 bg-[#21352d]"></div>
     </header>
-   
-  
+    <!-- Header End -->
 
-        </section>
+    <!-- Section 1 start -->
+    <section id="coffee-bean" class="relative">
+        <div class="relative z-10 flex items-center justify-center h-screen">
+            <div class="flex flex-row items-center justify-center w-4/5 mb-24">
+                <!-- Image Box -->
+                <div class="w-1/2 h-auto max-w-[600px] max-h-[600px] border-8 border-[#a9a06b] overflow-hidden">
+                    <img src="src/assets/images/section1-image.jpg" alt="coffee-beans" class="w-full h-full object-cover object-center">
+                </div>
+                <!-- Text Box -->
+                <div class="text-[#104236] w-1/2 h-auto max-w-[600px] max-h-[600px] ml-20 flex flex-col items-start justify-center space-y-4">
+                    <h1 class="text-[2.6rem] mb-4 text-center font-semibold leading-[1.3]">With the finest selection of coffee bean</h1>
+                    <p class="text-2xl text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                        in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background -->
+        <div class="absolute inset-0 flex">
+            <!-- Left Background with Image -->
+            <div class="w-[33%] bg-cover bg-center">
+                <img src="src/assets/images/section1-bg.jpg" alt="Coffee Beans Background" class="w-full h-full object-center object-cover">
+            </div>  
+            <!-- Right Background  -->
+            <div class="w-[67%] bg-[#F0E7CD]"></div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="absolute bottom-0 left-0 w-full h-24 bg-[#21352d]"></div>
+    </section>
+    <!-- Section 1 start -->
+
         <!-- start Razieh codes -->
         <section class="menu">
             <!-- menu title -->
@@ -273,7 +309,7 @@
     <footer class=" text-[#ded4b7] py-10 text-lg  bg-[url(./src/assets/images/background_pattern.jpg)]  " >
      
       <div class="max-w-6xl mx-auto flex flex-wrap justify-self-center justify-between gap-8 ">
-        <div class="flex-1 min-w-[300px] ">
+        <div class="flex-1  sm:min-w-[300px] sm:min-w-[80px] ">
           <h2 class="text-2xl font-bold mb-4">Contact</h2>
           <p class="text-lg leading-relaxed mb-4">
           Glorious Street, 30 - City (Country)</p>
@@ -288,7 +324,7 @@
           </div>
         </div>
         
-        <div class="  flex-1 min-w-[450px] justify-self-center j"  >
+        <div class="  flex-1 sm:min-w-[450px] min-w-[100px] justify-self-center j"  >
 
     
           <h2 class="  mt-20 text-3xl font-bold mb-4 justify-self-center" >Open Everyday</h2>
@@ -296,7 +332,7 @@
           
         </div>
     
-        <div class="flex-1 min-w-[80px] "  >
+        <div class="flex-1 sm:min-w-[80px] min-w-[50px] "  >
       
           <ul class="flex flex-col gap-2">
             <li><a href="#" class="hover:text-orange-400 transition-colors">Home</a></li>
@@ -307,7 +343,7 @@
           </ul>
         </div>
     
-        <div class="flex-1 min-w-[80px]">
+        <div class="flex-1  min-w-[20px]  sm:min-w-[80px]">
           
           <ul class="flex flex-col gap-2">
             <li><a href="#" class="hover:text-orange-400 transition-colors">Privacy Policy</a></li>
