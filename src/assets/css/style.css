@@ -24,8 +24,7 @@ body{
 }
 
 .green-photo-background{
-    background: url(../images/header-bg.jpg) center;
-    background-size: cover;
+    background: url(../images/background_pattern.jpg) center;
 }
 
 .dark-green-divider{
