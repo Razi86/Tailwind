@@ -86,41 +86,43 @@
 
     <!-- Section 1 start -->
     <section id="coffee-bean" class="relative">
-        <div class="relative z-10 flex items-center justify-center h-screen">
-            <div class="flex flex-row items-center justify-center w-4/5 mb-24">
-                <!-- Image Box -->
-                <div class="w-1/2 h-auto max-w-[600px] max-h-[600px] border-8 border-[#a9a06b] overflow-hidden">
-                    <img src="src/assets/images/section1-image.jpg" alt="coffee-beans" class="w-full h-full object-cover object-center">
-                </div>
-                <!-- Text Box -->
-                <div class="text-[#104236] w-1/2 h-auto max-w-[600px] max-h-[600px] ml-20 flex flex-col items-start justify-center space-y-4">
-                    <h1 class="text-[2.6rem] mb-4 text-center font-semibold leading-[1.3]">With the finest selection of coffee bean</h1>
-                    <p class="text-2xl text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                        in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
+        <div class="relative z-10 flex h-screen items-center justify-center">
+            <!-- Main Content -->
+            <div class="flex flex-col md:flex-row items-center justify-center w-5/6 md:w-6/7 lg:w-4/5 space-x-6 lg:space-x-8 mb-24">
+              
+              <!-- Image Box -->
+              <div class="w-full sm:w-5/6 md:w-3/5 lg:w-3/5 xl:w-1/2 h-auto max-w-[600px] max-h-[600px] border-4 md:border-6 lg:border-8 border-[#a9a06b] overflow-hidden" aria-label="Image Box">
+                <img src="src/assets/images/section1-image.jpg" alt="header-image" class="w-full h-full object-cover object-center">
+              </div>
+              
+              <!-- Text Box -->
+              <div class="text-[#21352d] w-full md:w-2/5 lg:w-2/5 xl:w-1/2 h-auto max-w-[600px] max-h-[600px] flex flex-col items-center justify-center space-y-4 transform translate-y-4 sm:translate-y-8 md:translate-y-0 xl:space-x-6 xl:space-y-6">
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.6rem] text-center font-medium xl:font-semibold leading-[1.3]">With the finest selection of coffee bean</h1>
+                <p class="text-xs md:text-base lg:text-xl xl:text-2xl text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                    in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+        
             </div>
-        </div>
-
-        <!-- Background -->
-        <div class="absolute inset-0 flex">
-            <!-- Left Background with Image -->
+          </div>
+        
+          <!-- Desktop Background Layer - Only visible on lg and up -->
+          <div class="hidden md:flex absolute inset-0">
             <div class="w-[33%] bg-cover bg-center">
-                <img src="src/assets/images/section1-bg.jpg" alt="Coffee Beans Background" class="w-full h-full object-center object-cover">
-            </div>  
-            <!-- Right Background  -->
+              <img src="src/assets/images/header-bg.jpg" alt="Header Background" class="w-full h-full object-center object-cover" />
+            </div>
             <div class="w-[67%] bg-[#F0E7CD]"></div>
-        </div>
-
-        <!-- Bottom -->
-        <div class="absolute bottom-0 left-0 w-full h-24 bg-[#21352d]"></div>
+          </div>
+          
+          <!-- Footer Bar -->
+          <div class="absolute bottom-0 left-0 w-full h-12 sm:h-16 md:h-20 xl:h-24 bg-[#21352d]"></div>
     </section>
-    <!-- Section 1 start -->
+    <!-- Section 1 End -->
 
         <!-- start Razieh codes -->
         <section class="menu">
