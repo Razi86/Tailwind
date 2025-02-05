@@ -9,361 +9,335 @@
     <link rel="stylesheet" href="./src/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Header Start -->
-    <header class="relative h-screen bg-cover bg-center">
+    <header>
+        <!-- Logo -->
+        <div class="absolute top-0 left-10 z-3">
+            <img src="src/assets/images/logo.jpg" alt="logo" class="w-25 h-auto border-8 border-[#a9a06b]">
+        </div>
+        <div class="mt-12">
 
-        <!-- Header Content -->
-        <div class="relative z-10 flex flex-col h-full mt-8 md:mt-10 lg:mt-16 xl:mt-20">	
-
-            <!-- Top Navigation -->
-            <div class="bg-[#21352d] flex items-center lg:justify-around py-2 px-5 sm:py-3 md:sm:py-4 relative">
-
-                <!-- Logo -->
-                <div class="absolute top-0 left-10 transform -translate-y-1/2 w-24 h-36 border-4 sm:w-32 sm:h-48 md:w-48 md:h-72 lg:w-48 lg:h-72 border-2 sm:border-4 md:border-8 border-[#a9a06b] flex items-center justify-center bg-white">
-                    <img src="src/assets/images/logo.jpg" alt="logo" class="w-full h-full object-cover object-center">
-                </div>
-
-                <!-- Navigation Bar -->
-                <nav class="hidden lg:flex lg:ml-24">
-                    <ul class="flex space-x-8 lg:space-x-16 xl:space-x-24 text-2xl md:p-2">
-                        <li><a href="#" class="text-[#ddd278] text-opacity-60 hover:text-opacity-100 transition-opacity">Home</a></li>
-                        <li><a href="#" class="text-[#ddd278] font-bold">News</a></li>
-                        <li><a href="#" class="text-[#ddd278] text-opacity-60 hover:text-opacity-100 transition-opacity">Menu</a></li>
-                        <li><a href="#" class="text-[#ddd278] text-opacity-60 hover:text-opacity-100 transition-opacity">Blog</a></li>
-                        <li><a href="#" class="text-[#ddd278] text-opacity-60 hover:text-opacity-100 transition-opacity">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Hamburger Menu - Only visible on mobile/tablet, positioned on right -->
-                <button class="block lg:hidden ml-auto text-[#ddd278] focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
-                        xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Main Content -->
-            <div class="flex flex-grow items-center justify-center px-4">
-                <div class="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl space-y-5 md:space-y-0 md:space-x-5">
-
-                    <!-- Image Box -->
-                    <div class="w-full sm:w-4/5 md:w-2/3 lg:w-3/5 aspect-[4/3] border-2 sm:border-4 md:border-8 border-[#a9a06b] overflow-hidden transform -translate-y-20 sm:-translate-y-20 lg:translate-y-0 xl:-translate-y-4 mt-20 lg:mt-0" aria-label="Image Box">
-                        <img src="src/assets/images/header-image.jpg" alt="header-image" class="w-full h-full object-cover object-center">
-                    </div>
-                    
-                    <!-- Text Box -->
-                    <div class="text-[#21352d] md:text-[#ddd278] w-full md:w-1/3 lg:w-2/5 flex flex-col items-center justify-center space-y-4 transform -translate-y-12 sm:-translate-y-16">
-                        <h1 class="text-3xl text-center md:text-start sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-2">Come check its perfect taste</h1>
-                        <p class="text-sm mt-2 text-center md:text-start sm:text-sm md:text-xl lg:text-lg">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <!-- Navigation Bar -->
+            <nav class="pr-30 w-full z-2 bg-[#21352d]">
+                <ul class="flex space-x-14 text-xl xl:text-2xl p-2 items-center justify-end">
+                    <li><a href="#" class="text-[#ddd278] text-opacity-60">Home</a></li>
+                    <li><a href="#" class="text-[#ddd278] font-bold">News</a></li>
+                    <li><a href="#" class="text-[#ddd278] text-opacity-60">Menu</a></li>
+                    <li><a href="#" class="text-[#ddd278] text-opacity-60">Blog</a></li>
+                    <li><a href="#" class="text-[#ddd278] text-opacity-60">Contact</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <!-- Background Layers -->
-        <div class="hidden md:flex absolute inset-0">
-            <!-- Left Background -->
+        <!-- Main Content -->
+        <div class="flex h-100 lg:h-140 2xl:h-160 w-full">
             <div class="w-2/5"></div>
-            <!-- Right Background with Image -->
-            <div class="w-3/5 bg-cover bg-center">
-                <img src="src/assets/images/header-bg.jpg" alt="Header Background" class="w-full h-full object-center object-cover">
+            <div class="w-3/5 bg-[url(src/assets/images/background_pattern.jpg)]">
             </div>
         </div>
-
-        <!-- Bottom -->
-        <div class="absolute bottom-0 left-0 w-full h-12 sm:h-16 md:h-20 xl:h-24 bg-[#21352d]"></div>
+        <div class="flex justify-center items-center pt-15 h-100 
+            lg:h-140 lg:-top-140 lg:-mb-140 px-25 2xl:h-160  2xl:-top-160 2xl:-mb-160 relative -top-100 -mb-100">
+            <div class="w-1/2">
+                <img class="w-full border-6 border-[#AA9A69]" src="./src/assets/images/header-image.jpg "
+                    alt="header-image">
+            </div>
+            <div class="text-[#a59f6d] w-1/2 pl-8">
+                <h1 class="text-3xl font-bold mb-4">Come check its perfect taste</h1>
+                <p class="text-[#c9c7af]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+        <div class="dark-green-divider size-10 w-full"></div>
     </header>
     <!-- Header End -->
 
     <!-- Section 1 start -->
-    <section id="coffee-bean" class="relative">
-        <div class="relative z-10 flex h-screen items-center justify-center">
-            <!-- Main Content -->
-            <div class="flex flex-col md:flex-row items-center justify-center w-5/6 md:w-6/7 lg:w-4/5 space-x-6 lg:space-x-8 mb-24">
-              
-              <!-- Image Box -->
-              <div class="w-full sm:w-5/6 md:w-3/5 lg:w-3/5 xl:w-1/2 h-auto max-w-[600px] max-h-[600px] border-4 md:border-6 lg:border-8 border-[#a9a06b] overflow-hidden" aria-label="Image Box">
-                <img src="src/assets/images/section1-image.jpg" alt="header-image" class="w-full h-full object-cover object-center">
-              </div>
-              
-              <!-- Text Box -->
-              <div class="text-[#21352d] w-full md:w-2/5 lg:w-2/5 xl:w-1/2 h-auto max-w-[600px] max-h-[600px] flex flex-col items-center justify-center space-y-4 transform translate-y-4 sm:translate-y-8 md:translate-y-0 xl:space-x-6 xl:space-y-6">
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.6rem] text-center font-medium xl:font-semibold leading-[1.3]">With the finest selection of coffee bean</h1>
-                <p class="text-xs md:text-base lg:text-xl xl:text-2xl text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                    in culpa qui officia deserunt mollit anim id est laborum.
+    <section>
+        <div class="flex h-90 lg:h-130 xl:h-140 2xl:h-160 w-full">
+            <div class=" w-2/6 bg-green-900 bg-[url(./src/assets/images/background_pattern.jpg)]">
+            </div>
+            <div class="w-4/5"></div>
+        </div>
+        <div class="flex justify-center items-center lg:h-130 lg:-top-130 lg:-mb-130 
+            h-90 px-25 relative -top-90 -mb-90 xl:h-140 xl:-top-140 xl:-mb-140 2xl:h-160 2xl:-top-160 2xl:-mb-160">
+            <div class="w-2/5">
+                <img class="w-full border-6 border-[#AA9A69]" src="./src/assets/images/section1-image.jpg "
+                    alt="section3">
+            </div>
+            <div class="text-[#104236] w-3/5 pl-8">
+
+                <h2 class="text-3xl text-center font-bold mb-4">With the finest selection of
+                    coffee bean</h2>
+                <p class="text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                    , sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-              </div>
-        
             </div>
-          </div>
-        
-          <!-- Desktop Background Layer - Only visible on lg and up -->
-          <div class="hidden md:flex absolute inset-0">
-            <div class="w-[33%] bg-cover bg-center">
-              <img src="src/assets/images/header-bg.jpg" alt="Header Background" class="w-full h-full object-center object-cover" />
-            </div>
-            <div class="w-[67%] bg-[#F0E7CD]"></div>
-          </div>
-          
-          <!-- Footer Bar -->
-          <div class="absolute bottom-0 left-0 w-full h-12 sm:h-16 md:h-20 xl:h-24 bg-[#21352d]"></div>
+        </div>
+        <div class="dark-green-divider size-10 w-full"></div>
     </section>
-    <!-- Section 1 End -->
 
-        <!-- start Razieh codes -->
-        <section class="menu">
-            <!-- menu title -->
-            <h2 class="text-center text-3xl/11 font-bold text-[#a59f6d]">Menu</h2>
-            <!-- menu category -->
-            <div class="menu-titles text-sm/7 font-medium flex text-[#a59f6d]">
-                <div class="w-1/4 px-4 pl-9">OUR BASICS</div>
-                <div class="w-1/4 px-4">OUR SPECIALS</div>
-                <div class="w-1/4 px-4">OUR DIARY FREE MILKS</div>
-                <div class="w-1/4 px-4 pr-9">TO PAIR WITH</div>
-            </div>
-            <!-- menu items -->
-            <div class="menu-items text-xs py-2 flex justify-between -mb-20">
-                <div class="w-1/4 px-4 pl-9">
-                    <div class="flex justify-between">
-                        <div class="item-title">Espresso</div>
-                        <div class="item-price">1,60</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Double Espresso</div>
-                        <div class="item-price">2,60</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Brewed Coffee</div>
-                        <div class="item-price">2,20</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">American Coffee</div>
-                        <div class="item-price">2,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Macchiato</div>
-                        <div class="item-price">1,80</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Latte</div>
-                        <div class="item-price">2,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Cappuccino</div>
-                        <div class="item-price">3,40</div>
-                    </div>
+    <!-- Section 1 start -->
+
+    <!-- start Razieh codes -->
+    <section class="menu">
+        <!-- menu title -->
+        <h2 class="text-center text-3xl/11 font-bold text-[#a59f6d]">Menu</h2>
+        <!-- menu category -->
+        <div class="menu-titles text-sm/7 font-medium flex text-[#a59f6d]">
+            <div class="w-1/4 px-4 pl-9">OUR BASICS</div>
+            <div class="w-1/4 px-4">OUR SPECIALS</div>
+            <div class="w-1/4 px-4">OUR DIARY FREE MILKS</div>
+            <div class="w-1/4 px-4 pr-9">TO PAIR WITH</div>
+        </div>
+        <!-- menu items -->
+        <div class="menu-items text-xs py-2 flex justify-between -mb-20">
+            <div class="w-1/4 px-4 pl-9">
+                <div class="flex justify-between">
+                    <div class="item-title">Espresso</div>
+                    <div class="item-price">1,60</div>
                 </div>
-                <div class="w-1/4 px-4">
-                    <div class="flex justify-between">
-                        <div class="item-title">Kopi Luwak</div>
-                        <div class="item-price">10,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Jamiacan Blue Mount.</div>
-                        <div class="item-price">8,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Yemen</div>
-                        <div class="item-price">5,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Zimbabwe</div>
-                        <div class="item-price">6,00</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Mocha Java</div>
-                        <div class="item-price">4,00</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Guatemala Coban</div>
-                        <div class="item-price">8,50</div>
-                    </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Double Espresso</div>
+                    <div class="item-price">2,60</div>
                 </div>
-                <div class="w-1/4 px-4">
-                    <div class="flex justify-between">
-                        <div class="item-title">Soya</div>
-                        <div class="item-price">1,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Oat</div>
-                        <div class="item-price">2,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Almond</div>
-                        <div class="item-price">2,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Coconut</div>
-                        <div class="item-price">3,00</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Rice</div>
-                        <div class="item-price">3,50</div>
-                    </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Brewed Coffee</div>
+                    <div class="item-price">2,20</div>
                 </div>
-                <div class="w-1/4 px-4 pr-9">
-                    <div class="flex justify-between">
-                        <div class="item-title">Pistachio Muffin</div>
-                        <div class="item-price">5,00</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Coulant</div>
-                        <div class="item-price">4,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Black Forest Cake</div>
-                        <div class="item-price">5,50</div>
-                    </div>
-                    <div class="flex justify-between">
-                        <div class="item-title">Crispy Cake</div>
-                        <div class="item-price">4,50</div>
-                    </div>
+                <div class="flex justify-between">
+                    <div class="item-title">American Coffee</div>
+                    <div class="item-price">2,50</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Macchiato</div>
+                    <div class="item-price">1,80</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Latte</div>
+                    <div class="item-price">2,50</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Cappuccino</div>
+                    <div class="item-price">3,40</div>
                 </div>
             </div>
-            <!-- menu images -->
-            <div class="flex h-auto relative top-25 px-4">
-                <div class="w-1/4 px-4">
-                    <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section2-menu-image1.jpg" alt="Coffee">
+            <div class="w-1/4 px-4">
+                <div class="flex justify-between">
+                    <div class="item-title">Kopi Luwak</div>
+                    <div class="item-price">10,50</div>
                 </div>
-                <div class="w-1/4 px-4">
-                    <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section2-menu-image2.jpg" alt="Coffee Bean">
-
+                <div class="flex justify-between">
+                    <div class="item-title">Jamiacan Blue Mount.</div>
+                    <div class="item-price">8,50</div>
                 </div>
-                <div class="w-1/4 px-4">
-                    <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section2-menu-image3.jpg" alt="Milch">
+                <div class="flex justify-between">
+                    <div class="item-title">Yemen</div>
+                    <div class="item-price">5,50</div>
                 </div>
-                <div class="w-1/4 px-4">
-                    <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section2-menu-image4.jpg" alt="Cake">
+                <div class="flex justify-between">
+                    <div class="item-title">Zimbabwe</div>
+                    <div class="item-price">6,00</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Mocha Java</div>
+                    <div class="item-price">4,00</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Guatemala Coban</div>
+                    <div class="item-price">8,50</div>
                 </div>
             </div>
-            <!-- green-background -->
-            <div class="green-photo-background w-full h-45">
+            <div class="w-1/4 px-4">
+                <div class="flex justify-between">
+                    <div class="item-title">Soya</div>
+                    <div class="item-price">1,50</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Oat</div>
+                    <div class="item-price">2,50</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Almond</div>
+                    <div class="item-price">2,50</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Coconut</div>
+                    <div class="item-price">3,00</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Rice</div>
+                    <div class="item-price">3,50</div>
+                </div>
+            </div>
+            <div class="w-1/4 px-4 pr-9">
+                <div class="flex justify-between">
+                    <div class="item-title">Pistachio Muffin</div>
+                    <div class="item-price">5,00</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Coulant</div>
+                    <div class="item-price">4,50</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Black Forest Cake</div>
+                    <div class="item-price">5,50</div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="item-title">Crispy Cake</div>
+                    <div class="item-price">4,50</div>
+                </div>
+            </div>
+        </div>
+        <!-- menu images -->
+        <div class="flex h-auto relative top-25 px-4">
+            <div class="w-1/4 px-4">
+                <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section2-menu-image1.jpg" alt="Coffee">
+            </div>
+            <div class="w-1/4 px-4">
+                <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section2-menu-image2.jpg"
+                    alt="Coffee Bean">
 
             </div>
-            <!-- divider -->
-            <div class="dark-green-divider size-10 w-full"></div>
-        </section>
+            <div class="w-1/4 px-4">
+                <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section2-menu-image3.jpg" alt="Milch">
+            </div>
+            <div class="w-1/4 px-4">
+                <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section2-menu-image4.jpg" alt="Cake">
+            </div>
+        </div>
+        <!-- green-background -->
+        <div class="green-photo-background w-full h-45">
 
-        <!-- Section 3 start - Ali -->
-        <section id="art-of-coffee" class="relative">
+        </div>
+        <!-- divider -->
+        <div class="dark-green-divider size-10 w-full"></div>
+    </section>
 
-            <!-- Section 3 -->
-  <!-- Section 3 -->
-  <div class="relative z-10 flex h-screen items-center justify-center flex-col space-y-8 -translate-y-12 sm:-translate-y-8 md:-translate-y-24">
-    
-    <!-- Title -->
-    <h1 class="text-[#21352d] md:text-[#ddd278] text-3xl sm:text-4xl md:text-5xl xl:text-[4rem] font-medium leading-[1.3] mb-8 sm:mb-8 xl:mb-4">
-      The art of coffee in your cup
-    </h1>
+    <!-- Section 3 start - Ali -->
+    <section id="art-of-coffee">
+        <div class="relative">
+            <div class="relative z-10">
 
-    <!-- Content -->
-    <div class="flex flex-col md:flex-row items-center justify-center w-4/5 md:space-x-8 lg:space-x-16">
-      
-      <!-- Text Box -->
-      <div class="text-[#21352d] md:text-[#ddd278] w-full md:w-1/3 lg:w-1/2 h-auto max-w-[600px] flex flex-col items-start justify-start space-y-8 -translate-y-8 xl:-translate-y-4 2xl:-translate-y-12">
-        <p class="text-sm sm:text-lg md:text-base lg:text-xl xl:text-2xl 2xl:text-[1.7rem] text-justify lg:mb-2 xl:mb-0 2xl:leading-[1.5]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        </p>
-        <p class="text-sm sm:text-base md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold -translate-y-4 md:translate-y-8 xl:translate-y-12 text-[#104236]">
-          Open Everyday<br>
-          <span class="text-xs sm:text-sm md:text-xl lg:text-3xl xl:text-4xl font-normal">From 7 AM to 8 PM</span>
-        </p>
-        
-      </div>
-
-      <!-- Image Box -->
-      <div class="w-full md:w-2/3 xl:w-[70%] h-auto max-w-[800px] border-4 md:border-8 border-[#a9a06b] overflow-hidden" aria-label="Image Box">
-        <img src="src/assets/images/section3-image.jpg" alt="header-image" class="w-full h-full object-cover object-center">
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Background Layers -->
-  <div class="hidden md:flex flex-col absolute inset-0">
-    <!-- Bottom Background with Image -->
-    <div class="h-[50%] bg-cover bg-center">
-      <img src="src/assets/images/header-bg.jpg" alt="Header Background" class="w-full h-full object-cover object-center">
-    </div>
-    <!-- Top Background -->
-    <div class="h-[40%]"></div>
-  </div>
-
-  <!-- Bottom -->
-  <div class="absolute bottom-0 left-0 w-full h-12 sm:h-16 md:h-20 xl:h-24 bg-[#21352d]"></div>
-        </section>
-        <!-- Section 3 End -Ali -->
-        
-        <!-- Razieh codes -->
-        <section>
-            <div class="min-h-30">
-                <h2 class="text-3xl/11 font-bold text-[#a59f6d] text-center w-1/2 mx-auto py-5">
-                    Now you can also buy our coffee and brew it at home.
+                <!-- Title -->
+                <h2 class="text-3xl/11 text-center py-4 font-bold text-[#ddd278]">
+                    The art of coffee in your cup
                 </h2>
+    
+                <!-- Content -->
+                <div class="flex justify-center w-[90%] mx-auto">
+    
+                    <!-- Text Box -->
+                    <div class="text-[#ddd278] w-1/2 h-auto">
+                        <p class="text-sm text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <h3 class="text-2xl mt-20 xl:mt-35 lg:mt-30 md:mt-25 text-center font-bold text-[#104236]">
+                            Open Everyday<br>
+                            <span class=" font-normal">From 7 AM to 8 PM</span>
+                        </h3>
+                    </div>
+    
+                    <!-- Image Box -->
+                    <div class="border-8 border-[#a9a06b] ml-8 mb-9">
+                        <img src="src/assets/images/section3-image.jpg" alt="cup-of-caffee"
+                            class="h-auto max-w-100 object-cover object-center">
+                    </div>
+    
+                </div>
+    
             </div>
-            <div class="mx-auto pl-12 flex items-center justify-center w-5/6 z-2 relative">
-                <div class="border-6 border-[#a59f6d] bg-[#c6c9b4] rounded-full 
+    
+            <!-- Backgorund -->
+            <div class="absolute inset-0">
+    
+                <!-- Top BG with Image -->
+                <div class="w-full h-[60%]">
+                    <img src="src/assets/images/header-bg.jpg" alt="background"
+                        class="w-full max-h-full bg-repeat">
+                </div>
+    
+                <!-- Bottom BG -->
+                <div class="w-full h-[40%]"></div>
+            </div>
+        </div>
+        
+
+        <!-- Bottom -->
+        <div class="dark-green-divider size-10 w-full"></div>
+    </section>
+    <!-- Section 3 End -Ali -->
+
+    <!-- Razieh codes -->
+    <section>
+        <div class="min-h-30">
+            <h2 class="text-3xl/11 font-bold text-[#a59f6d] text-center w-1/2 mx-auto py-5">
+                Now you can also buy our coffee and brew it at home
+            </h2>
+        </div>
+        <div class="mx-auto pl-12 flex items-center justify-center w-5/6 z-2 relative">
+            <div class="border-6 border-[#a59f6d] bg-[#c6c9b4] rounded-full 
                 w-25 h-25 text-center p-2 text-l leading-5 text-[#2b4539] -mr-7 z-3">
-                    this <br>
-                    month <br>
-                    <p class="font-bold leading-6">10% off</p>
-                </div>
-                <div class="max-w-2/3">
-                    <img class="border-6 border-[#a59f6d]" 
-                    src="./src/assets/images/section4-image.jpg" alt="coffee beans">
-                </div>
-                <a class="inline-block border-3 border-[#a59f6d] text-[#a59f6d] px-2
-                cursor-pointer py-1 ml-4 -mt-14" 
-                href="#">Order Now</a>
+                this <br>
+                month <br>
+                <p class="font-bold leading-6">10% off</p>
             </div>
-            <div class="green-photo-background min-h-40 relative -top-30 -mb-30">
+            <div class="max-w-2/3">
+                <img class="border-6 border-[#a59f6d]" src="./src/assets/images/section4-image.jpg" alt="coffee beans">
             </div>
-            <!-- divider -->
-            <div class="dark-green-divider size-10 w-full"></div>
-        </section>
-        <section>
-            <div class="relative">
-                <div class="px-15 py-10 min-h-40">
-                    <h2 class="text-3xl/11 font-bold text-[#a59f6d] w-1/2 text-right">Take away sustainable</h2>
-                </div>
-                <div class="green-photo-background px-15 py-20 text-right min-h-40">
-                    <h3 class="w-1/2 text-[#d9d17d] text-xl">Bring your cup and pay 0,30 less</h3>
-                </div>
-                <div class="pl-15 py-10 w-1/2 text-right text-[#2b4539]">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="px-15 py-10 w-1/2 absolute top-1 left-1/2">
-                    <img class="border-6 border-[#a59f6d] max-h-100" src="./src/assets/images/section5-image.jpg" alt="take away">
-                </div>
+            <a class="inline-block border-3 border-[#a59f6d] text-[#a59f6d] px-2
+                cursor-pointer py-1 ml-4 -mt-14" href="#">Order Now</a>
+        </div>
+        <div class="green-photo-background min-h-40 relative -top-30 -mb-30">
+        </div>
+        <!-- divider -->
+        <div class="dark-green-divider size-10 w-full"></div>
+    </section>
+    <section>
+        <div class="relative">
+            <div class="px-15 py-10 min-h-40">
+                <h2 class="text-3xl/11 font-bold text-[#a59f6d] w-1/2 text-right">Take away sustainable</h2>
             </div>
-        </section>
-     <!-- start Abdulwahed codes -->
-     <section>
+            <div class="green-photo-background px-15 py-20 text-right min-h-40">
+                <h3 class="w-1/2 text-[#d9d17d] text-xl">Bring your cup and pay 0,30 less</h3>
+            </div>
+            <div class="pl-15 py-10 w-1/2 text-right text-[#2b4539]">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="px-15 py-10 w-1/2 absolute top-1 left-1/2">
+                <img class="border-6 border-[#a59f6d] max-h-100" src="./src/assets/images/section5-image.jpg"
+                    alt="take away">
+            </div>
+        </div>
+    </section>
+    <!-- start Abdulwahed codes -->
+    <section>
         <div class="dark-green-divider size-10 w-full"></div>
         <div class="flex h-90 xl:h-120 w-full">
             <div class=" w-2/5 bg-green-900 bg-[url(./src/assets/images/background_pattern.jpg)]">
             </div>
             <div class="w-3/5"></div>
         </div>
-        <div class="flex justify-center items-center xl:h-120 xl:-top-120 xl:-mb-120 h-90 px-25 relative -top-90 -mb-90">
+        <div
+            class="flex justify-center items-center xl:h-120 xl:-top-120 xl:-mb-120 h-90 px-25 relative -top-90 -mb-90">
             <div class="w-1/2">
-                <img class="w-full border-6 border-[#AA9A69]"
-                src="./src/assets/images/section6-image.jpg " alt="section3">
+                <img class="w-full border-6 border-[#AA9A69]" src="./src/assets/images/section6-image.jpg "
+                    alt="section3">
             </div>
             <div class="text-[#8D5A31] w-1/2 pl-8">
                 <h1 class="text-3xl font-bold mb-6 ">Tasting day</h1>
@@ -379,72 +353,74 @@
             <div class="w-2/5 bg-green-900 bg-[url(./src/assets/images/background_pattern.jpg)]">
             </div>
         </div>
-        <div class="flex justify-center items-center h-90 xl:h-120 xl:-top-120 xl:-mb-120 px-25 relative -top-90 -mb-90">
+        <div
+            class="flex justify-center items-center h-90 xl:h-120 xl:-top-120 xl:-mb-120 px-25 relative -top-90 -mb-90">
             <div class="text-[#8D5A31] w-1/2 pl-8">
                 <h1 class="text-[#a59f6d] text-3xl font-bold mb-4">Receive our offers every week</h1>
-                <button class="text-[#a59f6d] py-1 px-2 hover:bg-[#aa9a69] border-2 border-[#a59f6d] " >
+                <button class="text-[#a59f6d] py-1 px-2 hover:bg-[#aa9a69] border-2 border-[#a59f6d] ">
                     Register
                 </button>
-         </div>
+            </div>
             <div class="w-1/2">
-                <img class="w-full border-6 border-[#AA9A69]"
-                src="./src/assets/images/section7-image.jpg " alt="section7">
+                <img class="w-full border-6 border-[#AA9A69]" src="./src/assets/images/section7-image.jpg "
+                    alt="section7">
             </div>
         </div>
         <div class="dark-green-divider size-10 w-full"></div>
     </section>
 
+    <footer class="text-[#ded4b7] text-lg bg-[url(./src/assets/images/background_pattern.jpg)] p-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Contact</h2>
+                <p class="text-lg leading-relaxed mb-4">
+                    Glorious Street, 30 - City (Country)</p>
+                <p class="text-lg leading-relaxed mb-4">(+555) 555 555 555</p>
+                <p class="text-lg leading-relaxed mb-4"> coffee.shop@mail.com</p>
 
-  <footer class="text-[#ded4b7] text-lg bg-[url(./src/assets/images/background_pattern.jpg)] p-6">
-    <div>  <img class="w-20 relative flex justify-self-center border-4 border-[#aa9a69] -translate-y-10  "   src="./src/assets/images/logo.jpg" alt="Coffee Tasting"></div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-5">
-        <div >
-          <h2 class="text-2xl font-bold mb-4 w-100">Contact</h2>
-          <p class="text-lg leading-relaxed mb-4">
-          Glorious Street, 30 - City (Country)</p>
-          <p class="text-lg leading-relaxed mb-4">(+555) 555 555 555</p>
-          <p class="text-lg leading-relaxed mb-4"> coffee.shop@mail.com</p>
-         
-          <div class="flex gap-4">
-            <a href="#"><img src="./src/assets/icons/twitter_icon.png" alt="Instagram" class="w-6 h-6 transition-transform transform hover:scale-110"></a>
-            <a href="#"><img src="./src/assets/icons/facebook_icon.png" alt="Facebook" class="w-6 h-6 transition-transform transform hover:scale-110"></a>
-            <a href="#"><img src="./src/assets/icons/twitter_icon.png" alt="Twitter" class="w-6 h-6 transition-transform transform hover:scale-110"></a>
-            <a href="#"><img src="./src/assets/icons/WhatsApp_icon.png" alt="WhatsApp" class="w-6 h-6 transition-transform transform hover:scale-110"></a>
-          </div>
+                <div class="flex gap-4">
+                    <a href="#"><img src="./src/assets/icons/twitter_icon.png" alt="Instagram"
+                            class="w-6 h-6 transition-transform transform hover:scale-110"></a>
+                    <a href="#"><img src="./src/assets/icons/facebook_icon.png" alt="Facebook"
+                            class="w-6 h-6 transition-transform transform hover:scale-110"></a>
+                    <a href="#"><img src="./src/assets/icons/twitter_icon.png" alt="Twitter"
+                            class="w-6 h-6 transition-transform transform hover:scale-110"></a>
+                    <a href="#"><img src="./src/assets/icons/WhatsApp_icon.png" alt="WhatsApp"
+                            class="w-6 h-6 transition-transform transform hover:scale-110"></a>
+                </div>
+            </div>
+
+            <div class="   justify-self-center">
+                <div> <img class="w-20 relative flex justify-self-center border-4 border-[#aa9a69] -translate-y-10"
+                        src="./src/assets/images/logo.jpg" alt="Coffee Tasting"></div>
+
+                <h2 class="  mt-0 text-3xl font-bold mb-4 justify-self-center">Open Everyday</h2>
+                <h2 class="text-3xl font-bold mb-4 justify-self-center">From 7 AM to 8 PM</h2>
+
+            </div>
+
+            <div>
+
+                <ul class="flex flex-col gap-3">
+                    <li><a href="#" class="hover:text-orange-400 transition-colors">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-400 transition-colors">News</a></li>
+                    <li><a href="#" class="hover:text-orange-400 transition-colors">Menu</a></li>
+                    <li><a href="#" class="hover:text-orange-400 transition-colors">Blog</a></li>
+
+                </ul>
+            </div>
+
+            <div>
+
+                <ul class="flex flex-col gap-3">
+                    <li><a href="#" class="hover:text-orange-400 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-orange-400 transition-colors">Cookies</a></li>
+                    <li><a href="#" class="hover:text-orange-400 transition-colors">Condition</a></li>
+                    <li><a href="#" class="hover:text-orange-400 transition-colors">Map Site</a></li>
+
+                </ul>
+            </div>
         </div>
-        <div></div>
-    
-        
-        <div class=" justify-self-center "  >
-           
-    
-          <h2 class="  mt-0 text-3xl font-bold mb-4 justify-self-center" >Open Everyday</h2>
-          <h2 class="text-3xl font-bold mb-4 justify-self-center">From 7 AM to 8 PM</h2>
-          
-        </div>
-    
-        <div   >
-      
-          <ul class="flex flex-col gap-3">
-            <li><a href="#" class="hover:text-orange-400 transition-colors">Home</a></li>
-            <li><a href="#" class="hover:text-orange-400 transition-colors">News</a></li>
-            <li><a href="#" class="hover:text-orange-400 transition-colors">Menu</a></li>
-            <li><a href="#" class="hover:text-orange-400 transition-colors">Blog</a></li>
-          
-          </ul>
-        </div>
-    
-        <div>
-          
-          <ul class="flex flex-col gap-3">
-            <li><a href="#" class="hover:text-orange-400 transition-colors">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-orange-400 transition-colors">Cookies</a></li>
-            <li><a href="#" class="hover:text-orange-400 transition-colors">Condition</a></li>
-            <li><a href="#" class="hover:text-orange-400 transition-colors">Map Site</a></li>
-          
-          </ul>
-        </div>
-      </div>
     </footer>
 
 </body>
